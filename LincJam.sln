@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LincJam.CSharp.Plugins", "LincJam.CSharp.Plugins.csproj", "{53083A0E-E59D-7D9F-E432-173701187462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LincJam.CSharp", "LincJam.CSharp.csproj", "{46CF4306-0D7B-0457-2ED6-5D8933E12472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LincJam.CSharp.Editor", "LincJam.CSharp.Editor.csproj", "{16001C95-B288-2631-284C-EB4F497899FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53083A0E-E59D-7D9F-E432-173701187462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53083A0E-E59D-7D9F-E432-173701187462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53083A0E-E59D-7D9F-E432-173701187462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53083A0E-E59D-7D9F-E432-173701187462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CF4306-0D7B-0457-2ED6-5D8933E12472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CF4306-0D7B-0457-2ED6-5D8933E12472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CF4306-0D7B-0457-2ED6-5D8933E12472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CF4306-0D7B-0457-2ED6-5D8933E12472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16001C95-B288-2631-284C-EB4F497899FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16001C95-B288-2631-284C-EB4F497899FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16001C95-B288-2631-284C-EB4F497899FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16001C95-B288-2631-284C-EB4F497899FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
