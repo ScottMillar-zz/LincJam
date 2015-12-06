@@ -45,11 +45,11 @@ namespace UnityStandardAssets.Cameras
                 {
                     // velocity is high enough, so we'll use the target's velocty
                     targetForward = targetRigidbody.velocity.normalized;
-                    targetUp = Vector3.up;
+                    targetUp = Vector2.up;
                 }
                 else
                 {
-                    targetUp = Vector3.up;
+                    targetUp = Vector2.up;
                 }
                 m_CurrentTurnAmount = Mathf.SmoothDamp(m_CurrentTurnAmount, 1, ref m_TurnSpeedVelocityChange, m_SmoothTurnTime);
             }
@@ -100,7 +100,7 @@ namespace UnityStandardAssets.Cameras
             var rollRotation = Quaternion.LookRotation(targetForward, m_RollUp);
 
             // and aligning with the target object's up direction (i.e. its 'roll')
-            m_RollUp = m_RollSpeed > 0 ? Vector3.Slerp(m_RollUp, targetUp, m_RollSpeed*deltaTime) : Vector3.up;
+           
             transform.rotation = Quaternion.Lerp(transform.rotation, rollRotation, m_TurnSpeed*m_CurrentTurnAmount*deltaTime);
         }
     }

@@ -4,7 +4,9 @@ using System.Collections;
 public class cavemanAnimation : MonoBehaviour {
 
     Animator anim;
-    float move = 0;
+    Movement movement;
+    bool move = false;
+    bool painted = false;
 
     // Use this for initialization
     void Start () {
@@ -15,11 +17,42 @@ public class cavemanAnimation : MonoBehaviour {
 	void Update () {
 
 
-        while (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
-            move = 1;
-            anim.SetFloat("Speed", move);           
+            move = true;
+            anim.SetBool("moveRight", move);
         }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            move = true;
+            anim.SetBool("moveLeft", move);
+        }
+        else
+        {
+            move = false;
+            move = false;
+            anim.SetBool("moveLeft", move);
+            anim.SetBool("moveRight", move);
+        }
+        if (GetComponent<Movement>().paint == true)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                if (painted == false)
+                {
+                    painted = true;
+                    anim.SetBool("painted", painted);
+                }
+                else
+                {
+                    painted = false;
+                    anim.SetBool("painted", painted);
+                }
+            }
+        }
+        
+
+  
 
     }
 }
