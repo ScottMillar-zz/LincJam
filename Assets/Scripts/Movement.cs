@@ -11,6 +11,8 @@ public class Movement : MonoBehaviour {
     public bool painted = false;
     public bool paint = false;
     public bool enableR = false;
+    public bool key = false;
+    public bool levelUnlocked = false;
 
 		
 		void start()

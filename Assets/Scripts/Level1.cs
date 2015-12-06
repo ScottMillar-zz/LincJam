@@ -12,19 +12,22 @@ public class Level1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    if(Input.GetKeyDown(KeyCode.W))
+        if (isTriggered == true)
         {
-            Application.LoadLevel("Level2");
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                Application.LoadLevel("Level2");
+            }
         }
 
 	}
 
-    void onTriggerEnter()
+    void OnTriggerEnter2D()
     {
         isTriggered = true;
     }
 
-    void onTriggerExit()
+    void OnTriggerExit2D()
     {
         isTriggered = false;
     }
