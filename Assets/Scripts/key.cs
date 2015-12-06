@@ -19,6 +19,7 @@ public class key : MonoBehaviour {
     void OnCollisionEnter2D()
     {
         ying.GetComponent<Movement>().key = true;
+        Debug.Log("THEY SHOULD HAVE A KEY");
         yang.GetComponent<Movement>().key = true;
         Destroy(Key);
     }

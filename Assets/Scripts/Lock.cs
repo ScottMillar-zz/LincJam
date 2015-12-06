@@ -21,12 +21,15 @@ public class Lock : MonoBehaviour
 
     void OnCollisionEnter2D()
     {
-        if (ying.GetComponent<Movement>().key == true || yang.GetComponent<Movement>().key)
+        if (ying.GetComponent<Movement>().key == true || yang.GetComponent<Movement>().key == true)
         {
             ying.GetComponent<Movement>().key = false;
             yang.GetComponent<Movement>().key = false;
-            ying.GetComponent<Movement>().levelUnlocked = true;
-            yang.GetComponent<Movement>().levelUnlocked = true;
+            if (tag == "GameController")
+            {
+                ying.GetComponent<Movement>().levelUnlocked = true;
+                yang.GetComponent<Movement>().levelUnlocked = true;
+            }
             Destroy(unlock);
         }
     }

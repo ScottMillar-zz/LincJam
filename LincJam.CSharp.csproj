@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Level2.cs" />
     <Compile Include="Assets\Scripts\Level3.cs" />
     <Compile Include="Assets\Scripts\Level4.cs" />
+    <Compile Include="Assets\Scripts\Level5.cs" />
     <Compile Include="Assets\Scripts\Lock.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
     <Compile Include="Assets\Scripts\Painting.cs" />
